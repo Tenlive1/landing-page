@@ -51,6 +51,7 @@ header{
 }
 
 .hamburger.is-active .bar{
+    transform: translate(-50px);
     opacity: 0;
 }
 
@@ -110,4 +111,13 @@ header{
     z-index: -2;
 
     background-attachment: fixed;
+}
+.level1{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+h1{
+    text-align: center;
+    color: royalblue;
 }

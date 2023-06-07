@@ -18,3 +18,9 @@ https://www.wallpaperflare.com/oshi-no-ko-anime-girls-wallpaper-yrmls
 
 ai-tongue
 https://www.reddit.com/r/awwnime/comments/12pwrk4/ai_hoshino_oshi_no_ko/?utm_source=ifttt
+
+
+
+IDEA -
+
+use the website for people to get ticket??
