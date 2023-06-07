@@ -4,13 +4,21 @@
 }
 body{
     background-color: blueviolet;
+    height: 1000vh;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    background-color: rgba(0, 0, 0, .50);
+}
+.header-logo{
+    color: #fff;
+}
+header{
+    position: sticky;
+    top: 0;
 }
 .hamburger{
     width: 35px;
@@ -90,4 +98,16 @@ body{
 
 .mobile-nav a:hover{
     background-color: cornsilk;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("img/AI-tongue.jpg");
+    position:absolute;
+    z-index: -2;
+
+    background-attachment: fixed;
 }
