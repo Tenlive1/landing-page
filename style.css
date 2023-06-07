@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: blueviolet;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburger{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    appearance: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    transition: .4s;
+
+}
+
+.hamburger.is-active:before{
+    transform: rotate(-45deg) translate(-9px,6px);
+}
+
+.hamburger.is-active .bar{
+    opacity: 0;
+}
+
+.hamburger.is-active:after{
+    transform: rotate(45deg) translate(-7.5px,-6px);
+}
