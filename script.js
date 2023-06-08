@@ -15,7 +15,7 @@ window.onload = function(){
         }else if(val == 1){
             window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley","_blank"); 
         }
-        console.log(val)
+
        
     });
 
