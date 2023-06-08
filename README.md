@@ -19,8 +19,11 @@ https://www.wallpaperflare.com/oshi-no-ko-anime-girls-wallpaper-yrmls
 ai-tongue
 https://www.reddit.com/r/awwnime/comments/12pwrk4/ai_hoshino_oshi_no_ko/?utm_source=ifttt
 
+heart-by-rosuuri
+https://www.reddit.com/r/OshiNoKo/comments/12pq4zd/heart_by_rosuuri/
 
-
+group-pic
+https://oshinoko.fandom.com/wiki/B_Is_The_Sign
 IDEA -
 
 use the website for people to get ticket??
