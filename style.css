@@ -152,9 +152,11 @@ h1{
     justify-content: center;
 }
 .Listen-btn{
-    width: 12em;
-    height: 3em;
+    width: 15em;
+    height: 4em;
     
+    border-radius: 1em;
+    border: 1px solid black;
     margin: 2em auto 2em auto;
 }
 
