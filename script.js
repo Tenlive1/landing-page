@@ -18,30 +18,22 @@ window.onload = function(){
     });
 
     var counter =1;
-    var btn1 = document.getElementById('radio1');
-    var btn2 = document.getElementById('radio2');
-    var btn3 = document.getElementById('radio3');
-    var btn4 = document.getElementById('radio4');
-
-    btn1.addEventListener('click',()=>{
-        counter =1;
-    })
-    btn2.addEventListener('click',()=>{
-        counter =2;
-    })
-    btn3.addEventListener('click',()=>{
-        counter =3;
-    })
-    btn4.addEventListener('click',()=>{
-        counter =4;
-    })
-    //try to do the for each
+    var manual = document.getElementsByName('radio-btn');
+    manual.forEach(btn => {
+        btn.addEventListener('click',()=>{
+            counter = btn.className;
+        })
+    });
     setInterval(function(){
-
+        
         document.getElementById('radio' + counter).checked = true;
+        console.log(document.getElementById('radio' + counter));
         counter++;
         if (counter > 4){
             counter =1;
         }
     },5000);//timer
+
+    
+    
 }
