@@ -27,3 +27,10 @@ https://oshinoko.fandom.com/wiki/B_Is_The_Sign
 IDEA -
 
 use the website for people to get ticket??
+
+
+todo
+timer need to start where the user have left off
+and if user click manually please let it afk for a bit
+
+replace pic with fake news
