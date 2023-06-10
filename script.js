@@ -17,23 +17,21 @@ window.onload = function(){
         }
     });
 
-    var counter =1;
-    var manual = document.getElementsByName('radio-btn');
-    manual.forEach(btn => {
-        btn.addEventListener('click',()=>{
-            counter = btn.className;
-        })
-    });
-    setInterval(function(){
-        
-        document.getElementById('radio' + counter).checked = true;
-        console.log(document.getElementById('radio' + counter));
-        counter++;
-        if (counter > 4){
-            counter =1;
-        }
-    },5000);//timer
-
-    
+    var swiper = new Swiper(".slide-content", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     
 }
+

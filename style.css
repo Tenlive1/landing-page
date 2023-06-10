@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: blueviolet;
@@ -12,6 +13,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, .50);
+    
 }
 .header-logo{
     color: #fff;
@@ -20,6 +22,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 99;
 }
 .header-logo a{
     text-decoration: none;
@@ -173,103 +176,113 @@ header{
 
 .layer-2{
     background-color: pink;
-    height: 100vh;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
     /* slider */
     .container-2{
+        min-height: 100vh;
         display: flex;
-        justify-content: center;
         align-items: center;
-        background: pink;
-    }
-    .slider{
-        width: 800px;
-        height: 500px;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    .slides{
-        width: 500%;
-        height: 500px;
-        display: flex;
-    }
-    .slides input{
-        display: none;
-    }
-    .slide{
-        width: 20%;
-        transition: .2s;
-    }
-    .slide img{
-        width: 800px;
-        height: 500px;
-    }
-    /* manual css */
-    .navigation-manual{
-        position: absolute;
-        width: 800px;
-        margin-top: -40px;
-        display: flex;
         justify-content: center;
+        background-color: #EFEFEF;
     }
-    .manual-btn{
-        border: 2px solid rgb(0, 0, 0);
-        padding: 5px;
-        border-radius: 10px;
+    .slide-container{
+        max-width: 1128px;
+        width: 100%;
+        background-color: gray;
+        padding: 40px 0;
+    }
+    .slide-content{
+        margin: 0 40px;
+    }
+    .card{
+        border-radius: 25px;
+        background-color: #fff;
+
+    }
+    .image-content,
+    .card-content{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 14px;
+    }
+    .image-content{
+        position: relative;
+        row-gap: 5px;
+        padding: 25px 0;
+        
+    } 
+    /* background */
+     .overlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: blue;
+        top: 0;
+        left: 0;
+        border-radius: 25px 25px 0 25px;
+
+    }
+    .overlay::before,
+    .overlay::after{
+        position: absolute;
+        content: '';
+        height: 40px;
+        width: 40px;
+        right: 0;
+        bottom: -40px;
+        background-color: blue;
+    }
+    .overlay::after{
+        border-radius: 0px 25px 0 0px;
+        background-color: #fff;
+    }
+    .card-image{
+        position: relative;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+
+        background: #fff;
+        padding: 3px;
+    }
+    .card-image .card-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+
+        border: 4px solid blue;
+        box-sizing: border-box;
+    }
+
+    .title{
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+    }
+    .description{
+        font-size: 14px;
+        color: #787878;
+        text-align: center;
+    }
+    .button{
+        border: none;
+        font-size: 16px;
+        color: white;
+        padding: 8px 16px;
+        background-color:blue ;
+        border-radius: 6px;
+        margin: 16px;
         cursor: pointer;
-        transition: 1s;
+        transition: all .3s ease;
     }
+    .button:hover{
+        background: #265DF2;
+    }
+
     
-    .manual-btn:not(:last-child){/* gap for the button */
-        margin-right: 40px;
-    }
-
-    .manual-btn:hover{
-        background: white;
-    }
-    /* this is how you slide */
-    #radio1:checked ~ .first{
-        margin-left: 0;
-    }
-    #radio2:checked ~ .first{
-        margin-left: -20%;
-    }
-    #radio3:checked ~ .first{
-        margin-left: -40%;
-    }
-    #radio4:checked ~ .first{
-        margin-left: -60%;
-    }
-    /* css for auto nav */
-    .navigation-auto{
-        position: absolute;
-        display: flex;
-        width: 800px;
-        justify-content: center;
-        margin-top: 460px;
-    }
-    /* must be the same with manual */
-    .navigation-auto div{
-        border: 2px solid red;
-        padding: 5px;
-        border-radius: 10px;
-        transition: 1s;
-    }
-
-    .navigation-auto div:not(:last-child){
-        margin-right: 40px;
-    }
-    #radio1:checked ~ .navigation-auto .auto-btn1{
-        background: white; 
-        /* must be same color */
-    }
-    #radio2:checked ~ .navigation-auto .auto-btn2{
-        background: white; 
-    }
-    #radio3:checked ~ .navigation-auto .auto-btn3{
-        background: white; 
-    }
-    #radio4:checked ~ .navigation-auto .auto-btn4{
-        background: white; 
-    }
-
