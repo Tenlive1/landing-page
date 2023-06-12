@@ -18,9 +18,8 @@ window.onload = function(){
     });
 
     var swiper = new Swiper(".slide-content", {
-        slidesPerView: 1,
-        spaceBetween: 10,
         lazyLoading: true,
+        loop:true,
         pagination: {
             el: ".swiper-pagination",
             dynamicBullets: true,
@@ -35,25 +34,25 @@ window.onload = function(){
             delay: 1500,
             disableOnInteraction: false,
         },
-        // breakpoints: {
-        //     "@0.00": {
-        //       slidesPerView: 1,
-        //       spaceBetween: 10,
+        breakpoints: {
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 30,
               
-        //     },
-        //     "@0.75": {
-        //       slidesPerView: 2,
-        //       spaceBetween: 20,
-        //     },
-        //     "@1.00": {
-        //       slidesPerView: 3,
-        //       spaceBetween: 40,
-        //     },
-        //     "@1.50": {
-        //       slidesPerView: 4,
-        //       spaceBetween: 50,
-        //     },
-        //   },
+            },
+            560: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            950: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1280: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+          },
         
     });
     
