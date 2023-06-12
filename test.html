@@ -1,48 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="test/style2.css">
-  <link rel="stylesheet" href="import/swiper-bundle.min.css">
-  <script src="test/test.js" defer></script>
-  <title>testing slide</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test/style2.css" />
+    <link rel="stylesheet" href="import/swiper-bundle.min.css" />
+    <script src="test/test.js" defer></script>
+    <title>testing slide</title>
+  </head>
+  <body>
     <div class="layer-2">
       <div class="layer-2-title">
         <h1>What's New</h1>
       </div>
       <!-- start of slide-container -->
-      <div class="slide-container">
+      <div class="slide-container swiper">
         <!-- start of slide-content -->
         <div class="slide-content">
           <!-- start of card-container -->
-          <div class="card-container">
+          <div class="card-container swiper-wrapper">
             <!-- start of card -->
-            <div class="card">
-
-                <div class="img-container">
-                  <img src="img/group-pic.png" alt="">
+            <div class="card swiper-slide">
+              <div class="img-container">
+                <img src="img/group-pic.png" alt="" />
+              </div>
+              <div class="description">
+                <h1>NEW SONG!!</h1>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Atque voluptatum consequatur ipsum obcaecati adipisci
+                  molestiae architecto itaque maxime officiis voluptatibus
+                  consectetur illum amet minima eligendi iste labore veniam,
+                  iusto reiciendis.
+                </p>
+                <div class="btn-container">
+                  <button>View More</button>
                 </div>
-                <div class="description">
-                        <h1>NEW SONG!!</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque voluptatum consequatur ipsum obcaecati adipisci molestiae architecto itaque maxime officiis voluptatibus consectetur illum amet minima eligendi iste labore veniam, iusto reiciendis.</p>
-                      <div class="btn-container">
-                        <button>View More</button>
-                      </div>
+              </div>
+            </div>
+            <!-- end of card -->
+            <!-- start of card -->
+            <div class="card swiper-slide">
+              <div class="img-container">
+                <img src="img/group-pic.png" alt="" />
+              </div>
+              <div class="description">
+                <h1>NEW SONG!!</h1>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Atque voluptatum consequatur ipsum obcaecati adipisci
+                  molestiae architecto itaque maxime officiis voluptatibus
+                  consectetur illum amet minima eligendi iste labore veniam,
+                  iusto reiciendis.
+                </p>
+                <div class="btn-container">
+                  <button>View More</button>
                 </div>
-
+              </div>
+            </div>
+            <!-- end of card -->
+            <!-- start of card -->
+            <div class="card swiper-slide">
+              <div class="img-container">
+                <img src="img/group-pic.png" alt="" />
+              </div>
+              <div class="description">
+                <h1>NEW SONG!!</h1>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Atque voluptatum consequatur ipsum obcaecati adipisci
+                  molestiae architecto itaque maxime officiis voluptatibus
+                  consectetur illum amet minima eligendi iste labore veniam,
+                  iusto reiciendis.
+                </p>
+                <div class="btn-container">
+                  <button>View More</button>
+                </div>
+              </div>
             </div>
             <!-- end of card -->
           </div>
           <!-- end of card-container -->
         </div>
         <!-- end of slide-content -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>  
       </div>
       <!-- end of slide-container -->
     </div>
-  <script src="import/swiper-bundle.min.js"></script>
-</body>
+    <script src="import/swiper-bundle.min.js"></script>
+  </body>
 </html>

@@ -17,11 +17,10 @@ window.onload = function(){
         }
     });
 
-    var swiper = new Swiper(".card_slider", {
+    var swiper = new Swiper(".slide-content", {
         slidesPerView: 1,
-        spaceBetween: 30,
-        centeredSlides: true,
-        // loop: true,
+        spaceBetween: 10,
+        lazyLoading: true,
         pagination: {
             el: ".swiper-pagination",
             dynamicBullets: true,
@@ -31,10 +30,30 @@ window.onload = function(){
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+        
         autoplay: {
-            delay: 3500,
+            delay: 1500,
             disableOnInteraction: false,
         },
+        // breakpoints: {
+        //     "@0.00": {
+        //       slidesPerView: 1,
+        //       spaceBetween: 10,
+              
+        //     },
+        //     "@0.75": {
+        //       slidesPerView: 2,
+        //       spaceBetween: 20,
+        //     },
+        //     "@1.00": {
+        //       slidesPerView: 3,
+        //       spaceBetween: 40,
+        //     },
+        //     "@1.50": {
+        //       slidesPerView: 4,
+        //       spaceBetween: 50,
+        //     },
+        //   },
         
     });
     
