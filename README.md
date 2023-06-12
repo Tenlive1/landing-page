@@ -34,3 +34,19 @@ timer need to start where the user have left off
 and if user click manually please let it afk for a bit
 
 replace pic with fake news
+
+
+
+
+
+color
+#FF69B4 --- hot pink
+#FFB6C1 -- light pink
+
+#5C6AC4 -- royal blue
+#82A3D9 -- sky blue
+
+#AB7AC4 -- Lavender Purple
+#BE94D4 -- lilac
+
+#8d23eb -- my purple

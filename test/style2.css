@@ -1,84 +1,68 @@
-
 *{
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
-.img-container img{
-  max-width: 100%;
-}
-.slider_container .container{
-  /* padding: 0 15px; */
-  max-width: 1230px;
-  margin: 0 auto;
-}
-.card_slider{
-  /* padding:50px */
-}
-
-
-/* .swiper {
-  width: 100%;
-  height: 100%;
-} */
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+.layer-2{
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background-color: #BE94D4;
 }
-/* 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
-
-
-
-
-/* *{
-  box-sizing:border-box;
-  padding: 0;
-  margin: 0;
+.card{
+  max-width: 350px;
+  border-radius: 25px;
+  background-color: #AB7AC4;
 }
-
-body{
-  min-height: 100vh;
-  display:flex;
+.img-container{
+  display: flex;
   justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
+  padding: 1rem;
+  
 }
-
-img{
+.img-container img{
+  border-radius: 25px 25px 0 0;
+  object-fit: cover;
+  height: auto;
+  width: auto;
+}
+.description{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 14px;
+}
+.slide-container{
+  max-width: 1120px;
   width: 100%;
 }
-h1{
-  margin: 0.5rem 0;
-} */
-
-
-
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  display: grid;
-  grid-template-columns: repeat(6,300px);
-  grid-gap: 50px;
-  pointer-events: none; */
-
-/* 
- .card{
-  border: 1px solid #ccc;
-  border-radius: 1rem;
-  overflow: hidden;
+.slide-content{
+  margin: 0 16px;
 }
-.text-container{
-  color:#4e4e4e;
-  padding: 1rem;
-}  */
+.description p{
+  text-align: center;
+}
+.description h1{
+  text-align: center;
+}
+.btn-container button{
+  border: none;
+  font-size: 16px;
+  color:white;
+  padding: 8px 16px;
+  background-color: #5C6AC4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-container button:hover{
+  background-color: #82A3D9;
+}
+.btn-container{
+  display: flex;
+  justify-content: center;
+}
