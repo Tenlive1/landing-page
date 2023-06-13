@@ -30,10 +30,10 @@ window.onload = function(){
             prevEl: ".swiper-button-prev",
         },
         
-        // autoplay: {
-        //     delay: 1500,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 4500,
+            disableOnInteraction: false,
+        },
         
         breakpoints:{
           0:{
@@ -41,24 +41,29 @@ window.onload = function(){
             spaceBetween: 20,
             loop: true,
             centeredSlides: true,
+            
           },
           481: {
             slidesPerView: "2",
             loop: true,
             centeredSlides: true,
             spaceBetween: 30,
+            
           },
           769:{
             slidesPerView: "3",
             loop: true,
             centeredSlides: true,
             spaceBetween: 35,
+            
           },
           1025 :{
             slidesPerView: "4",
             loop: true,
             centeredSlides: true,
             spaceBetween: 35,
+            
+            
           },
           1200:{
             slidesPerView: "5",

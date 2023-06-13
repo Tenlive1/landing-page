@@ -187,11 +187,13 @@ header{
     background-color: #BE94D4;
 }
 .layer-2-title{
+    margin: 1rem;
     font-size: 4vh;
 }
 .layer-2 *{
     box-sizing: border-box;
 }
+
     /* slider */
     .slide-container{
     margin-bottom: 2rem;
@@ -233,9 +235,27 @@ header{
     }
     .description p{
         text-align: center;
+        font-size:1.1em;
+        
+        --max-lines: 3;
+        --line-height: 1;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: var(--max-lines);
     }
+    
     .description h1{
         text-align: center;
+        font-weight: 860;
+        font-size: 1.3em;
+
+        --max-lines: 3;
+        --line-height: 1;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: var(--max-lines);
     }
     .btn-container button{
         border: none;
@@ -255,6 +275,7 @@ header{
         display: flex;
         justify-content: center;
     }
+
     
     
     
