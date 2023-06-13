@@ -18,9 +18,8 @@ window.onload = function(){
     });
 
     var swiper = new Swiper(".slide-content", { 
-        spaceBetween: 30,
-        loop: true,
-        centeredSlides: true,
+      slidesPerView: "1",
+      spaceBetween: 10,
         pagination: {
             el: ".swiper-pagination",
             dynamicBullets: false,
@@ -37,15 +36,36 @@ window.onload = function(){
         // },
         
         breakpoints:{
-          600: {
+          0:{
+            slidesPerView: "1",
+            spaceBetween: 20,
+            loop: true,
+            centeredSlides: true,
+          },
+          481: {
             slidesPerView: "2",
+            loop: true,
+            centeredSlides: true,
+            spaceBetween: 30,
           },
-          900:{
+          769:{
             slidesPerView: "3",
+            loop: true,
+            centeredSlides: true,
+            spaceBetween: 35,
           },
-          1100 :{
+          1025 :{
             slidesPerView: "4",
-          }
+            loop: true,
+            centeredSlides: true,
+            spaceBetween: 35,
+          },
+          1200:{
+            slidesPerView: "5",
+            centeredSlides: false,
+            loop: false,
+            spaceBetween: 35,
+          },
         },
     });
     
