@@ -17,12 +17,13 @@ window.onload = function(){
         }
     });
 
-    var swiper = new Swiper(".slide-content", {
-        lazyLoading: true,
-        loop:true,
+    var swiper = new Swiper(".slide-content", { 
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
         pagination: {
             el: ".swiper-pagination",
-            dynamicBullets: true,
+            dynamicBullets: false,
             clickable: true,
         },
         navigation: {
@@ -30,30 +31,22 @@ window.onload = function(){
             prevEl: ".swiper-button-prev",
         },
         
-        autoplay: {
-            delay: 1500,
-            disableOnInteraction: false,
-        },
-        breakpoints: {
-            0: {
-              slidesPerView: 1,
-              spaceBetween: 30,
-              
-            },
-            560: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            950: {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-            1280: {
-              slidesPerView: 4,
-              spaceBetween: 40,
-            },
-          },
+        // autoplay: {
+        //     delay: 1500,
+        //     disableOnInteraction: false,
+        // },
         
+        breakpoints:{
+          600: {
+            slidesPerView: "2",
+          },
+          900:{
+            slidesPerView: "3",
+          },
+          1100 :{
+            slidesPerView: "4",
+          }
+        },
     });
     
 }

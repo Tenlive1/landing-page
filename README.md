@@ -25,6 +25,12 @@ https://www.reddit.com/r/OshiNoKo/comments/12pq4zd/heart_by_rosuuri/
 group-pic
 https://oshinoko.fandom.com/wiki/B_Is_The_Sign
 IDEA -
+sad pic
+https://www.zerochan.net/3928005#content
+tongue out
+https://wallha.com/wallpaper/oshi-no-ko-star-eyes-anime-girls-ai-hoshino-blushing-tongue-out-one-eye-closed-stars-looking-at-view-1376548
+Oshi_No_Ko_Anime_Trailer_1_03
+https://news.qoo-app.com/en/post/151124/oshi-no-ko-anime-ep-1-trailer
 
 use the website for people to get ticket??
 

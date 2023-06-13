@@ -177,20 +177,35 @@ header{
 /* level 2 layer */
 
 .layer-2{
-    height: 100vh;
+    /* height: 100vh; */
     max-height: 1000px;
     min-height: 600px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     background-color: #BE94D4;
 }
+.layer-2-title{
+    font-size: 4vh;
+}
+.layer-2 *{
+    box-sizing: border-box;
+}
     /* slider */
+    .slide-container{
+    margin-bottom: 2rem;
+    }
+    .card-container{
+        min-height: 30vh;
+        width: 300px;
+        max-width: 70vw;
+    }
     .card{
         max-width: 100%;
         border-radius: 25px;
         background-color: #AB7AC4;
+        
     }
     .img-container{
         display: flex;
@@ -212,6 +227,7 @@ header{
     .slide-container{
         max-width: 1680px;
         width: 100%;
+        padding: 1vh;
     }
     .slide-content{
         margin: 0 16px;
