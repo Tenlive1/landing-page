@@ -142,6 +142,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .layer-1-description{
@@ -153,9 +154,10 @@ header{
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    width: 80%;
 }
 .img-container-1 img{
-    max-width: 85%;
+   width: 100%;
 }
 
 
@@ -182,7 +184,23 @@ header{
 /* level 1 media query */
 
 @media screen and (min-width:480px){
-
+    .layer-1-container{
+        height: 70vh;
+    }
+    .container-1{
+        height: 60%;
+        width: 90%;
+        flex-direction: row;
+        margin:0;
+    }
+    .img-container-1{
+        height: 100%;
+        margin-bottom: 0;
+    }
+    .img-container-1 img{
+        height: 100%;
+        width: auto;
+    }
 }
 
 /* level 2 layer */

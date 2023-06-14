@@ -5,49 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="test/style2.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="test/test.js" defer></script>
+    <script src="script.js" defer></script>
     <title>testing slide</title>
 
   
   </head>
   <body>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+    <div class="layer-1">
+      <div class="background-container">
+          <div class="background"></div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 5,
-        centeredSlides: true,
-        spaceBetween: 24,
-        
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        slidesPerGroup: 1,
-        lazyLoading: true,
-        loop:true,
-        mousewheel: true,
-        keyboard: true,
-      });
-    </script>
+      <div class="layer-1-container">
+          <div class="container-1">
+              <div class="img-container-1">
+                  <img src="img/group-pic.png" alt="group-pic">
+              </div>
+              <div class="layer-1-description">
+                <div class="text-container">
+                  <h1>AVAILABLE NOW</h1>
+                  <h2>B Is Sign</h2>
+                  <h3>By B-Komachi</h3>
+                </div>
+
+                <div class="btn-container-1">
+                  <button class="Listen-btn">
+                      LISTEN NOW!
+                  </button>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
   </body>
 </html>

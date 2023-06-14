@@ -52,14 +52,14 @@ window.onload = function(){
             centeredSlides: true,
             
           },
-          481: {
+          480: {
             slidesPerView: "2",
             loop: true,
             centeredSlides: true,
             spaceBetween: 30,
             
           },
-          769:{
+          770:{
             slidesPerView: "3",
             loop: true,
             centeredSlides: true,
