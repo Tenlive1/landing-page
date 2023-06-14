@@ -135,18 +135,24 @@ header{
     background-color: rgba(18, 14, 241, 0.4);
     width: 85%;
     margin: 2em auto 0 auto;
-    border-radius: 25px;
+    border-radius: 50px;
     border: 2px solid white;
-    height: 85vh;
+    height: 75vh;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.layer-1-description{
+    display: flex;
+    flex-direction: column;
 }
 
 .img-container-1{
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 .img-container-1 img{
     max-width: 85%;
@@ -157,6 +163,7 @@ header{
 .text-container{
     text-align: center;
     color: #fff;
+    padding-bottom: 2rem;
 }
 
 .btn-container-1{
@@ -164,16 +171,19 @@ header{
     justify-content: center;
 }
 .Listen-btn{
-    width: 15em;
-    height: 4em;
-    
-    border-radius: 1em;
+    height: 50px;
+    border-radius: 12px;
     border: 1px solid black;
 
-    font-size: 4.5vw;
+    font-size: 1.3rem;
+    min-width: 200px;
     
 }
+/* level 1 media query */
 
+@media screen and (min-width:480px){
+
+}
 
 /* level 2 layer */
 
