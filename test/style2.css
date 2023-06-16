@@ -86,8 +86,12 @@ min-width: 280px;
   
 }
 
-@media screen and (min-height:700px){
+@media screen and (min-width:480px) and (min-height:600px){
   .text-container{
     height: 50%;
+  }
+  .img-container-1 img{
+    height: 100%;
+    width: auto;
   }
 }
