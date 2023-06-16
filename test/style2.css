@@ -86,6 +86,41 @@ min-width: 280px;
   
 }
 
+@media screen and (min-width:768px){
+  .container-1{
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    width: 90%;
+    min-height: 420px;
+  }
+  .img-container-1{
+    width: 55%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .img-container-1 img{
+    height:100%
+  }
+  .layer-1-description{
+    justify-content: space-around;
+    gap: 5rem;
+  }
+  .text-container{
+    padding-bottom: 0;
+  }
+  .btn-container-1{
+    padding-bottom: 0;
+  }
+  .layer-1{
+    height: 60vh;
+  }
+  .background{
+    height: 60vh;
+  }
+
+}
+
 @media screen and (min-width:480px) and (min-height:600px){
   .text-container{
     height: 50%;
