@@ -79,6 +79,18 @@
   padding-bottom: 2rem;
 
 }
+.text-container h1{
+  font-size: 1.5rem;
+  
+}
+.text-container h2{
+  font-size: 2.5rem;
+
+}
+.text-container h3{
+  font-size: 1.8rem;
+ 
+}  
 
 .btn-container-1{
   display: flex;
@@ -101,6 +113,15 @@
  @media (min-width:480px) {
   .container-1{
     height: auto;
+  }
+  .text-container h1{
+    font-size: 1.8rem;
+  }
+  .text-container h2{
+    font-size: 3rem;
+  }
+  .text-container h3{
+    font-size: 1.9rem;
   }  
 }
 
@@ -122,6 +143,9 @@
     max-height: 340px;
     height: 75vh;
     justify-content: space-evenly;
+
+    
+
   }
   .layer-1-description{
     height:100%;
@@ -145,7 +169,24 @@
   .text-container{
     padding-bottom: 0rem;
   }
-
+  .text-container h1{
+    font-size: 2.2rem;
+    @media screen and (max-height:280px){
+      font-size:1.5rem;
+    }
+  }
+  .text-container h2{
+    font-size: 3.0rem;
+    @media screen and (max-height:280px){
+      font-size:2.5rem;
+    }
+  }
+  .text-container h3{
+    font-size: 2.1rem;
+    @media screen and (max-height:280px){
+      font-size:1.8rem;
+    }
+  } 
 }
 
 
