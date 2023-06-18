@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    
 
     <!-- swipper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="script.js" defer></script>
     
     <title>Landing Page</title>
 </head>
@@ -146,4 +148,62 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
+  <script>
+    var swiper = new Swiper(".slide-content", { 
+        slidesPerView: "1",
+        spaceBetween: 10,
+          pagination: {
+              el: ".swiper-pagination",
+              dynamicBullets: false,
+              clickable: true,
+          },
+          navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+          },
+          
+          autoplay: {
+              delay: 4500,
+              disableOnInteraction: false,
+          },
+          
+          breakpoints:{
+            0:{
+              slidesPerView: "1",
+              spaceBetween: 20,
+              loop: true,
+              centeredSlides: true,
+              
+            },
+            480: {
+              slidesPerView: "2",
+              loop: true,
+              centeredSlides: true,
+              spaceBetween: 30,
+              
+            },
+            770:{
+              slidesPerView: "3",
+              loop: true,
+              centeredSlides: true,
+              spaceBetween: 35,
+              
+            },
+            1025 :{
+              slidesPerView: "4",
+              loop: true,
+              centeredSlides: true,
+              spaceBetween: 35,
+              
+              
+            },
+            1200:{
+              slidesPerView: "5",
+              centeredSlides: false,
+              loop: false,
+              spaceBetween: 35,
+            },
+          },
+      });
+  </script>
 </html>
