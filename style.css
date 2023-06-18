@@ -427,14 +427,17 @@ header{
 
     /* slider */
     .slide-container{
+      /* this i will change the size of the slide container aka the side will be bigger */
     margin-bottom: 2rem;
     }
     .card-container{
+      /* basically this will tell us how big the card will be at max size */
         min-height: 30vh;
         width: 300px;
         max-width: 70vw;
     }
     .card{
+      /* this i will tell me how big the card is in height */
         border-radius: 25px;
         background-color: #AB7AC4;
         

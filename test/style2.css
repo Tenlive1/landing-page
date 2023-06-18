@@ -1,112 +1,103 @@
-/* ------------ GOOGLE FONTS ------------ */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
-/* ------------ VARIABLES ------------ */
-:root{
-  /* FONT */
-  --font: 'Poppins', sans-serif;
-
-  /* COLORS */
-  --color: #9176FF;
-  --bg-color: #f4f4f4;
+.layer-2{
+  /* height: 100vh; */
+  max-height: 1000px;
+  min-height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: #BE94D4;
 }
-
-/* ------------ BASE ------------ */
-*{
-  margin: 0;
-  padding: 0;
+.layer-2-title{
+  margin: 1rem;
+  font-size: 4vh;
+}
+.layer-2 *{
   box-sizing: border-box;
 }
 
-body{
-  font-family: var(--font);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  /* slider */
+  .slide-container{
+    /* this i will change the size of the slide container aka the side will be bigger */
+  margin-bottom: 2rem;
+  }
+  .card-container{
+    /* basically this will tell us how big the card will be at max size */
+      /* min-height: 30vh;
+      width: 300px;
+      max-width: 70vw; */
+  }
+  .card{
+    /* this i will tell me how big the card is in height */
+      border-radius: 25px;
+      background-color: #AB7AC4;
+      
+  }
+  .img-container{
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      
+  }
+  .img-container img{
+      width: 100%;
+      border-radius: 25px 25px 0 0;
+      object-fit: cover;
+  }
+  .description{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px 14px;
+  }
+  .slide-container{
+      max-width: 1680px;
+      width: 100%;
+      padding: 1vh;
+  }
+  .slide-content{
+      margin: 0 16px;
+  }
+  .description p{
+      text-align: center;
+      font-size:1.1em;
+      
+      --max-lines: 3;
+      --line-height: 2;
+      line-height: var(--line-height);
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: var(--max-lines);
+  }
+  
+  .description h1{
+      text-align: center;
+      font-weight: 860;
+      font-size: 1.3em;
 
-  background-color: var(--bg-color);
-}
-
-/* ----------- SLIDER ------------ */
-.swiper{
-  width: 100%;
-}
-
-.swiper-wrapper{
-  width: 100%;
-  height: 35em;
-  display: flex;
-  align-items: center;
-}
-
-.card{
-  width: 20em;
-  height: 90%;
-  background-color: #fff;
-  border-radius: 2em;
-  box-shadow: 0 0 2em rgba(0, 0, 0, .2);
-  padding: 2em 1em;
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  margin: 0 2em;
-}
-
-.swiper-slide:not(.swiper-slide-active){
-  filter: blur(1px);
-}
-
-.card__image{
-  width: 10em;
-  height: 10em;
-  border-radius: 50%;
-  border: 5px solid var(--color);
-  padding: 3px;
-  margin-bottom: 2em;
-}
-
-.card__image img{
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.card__content{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.card__title{
-  font-size: 1.5rem;
-  font-weight: 500;
-  position: relative;
-  top: .2em;
-}
-
-.card__name{
-  color: var(--color);
-}
-
-.card__text{
-  text-align: center;
-  font-size: 1.1rem;
-  margin: 1em 0;
-}
-
-.card__btn{
-  background-color: var(--color);
-  color: #fff;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  border: none;
-  padding: .5em;
-  border-radius: .5em;
-  margin-top: .5em;
-  cursor: pointer;
-}
+      --max-lines: 3;
+      --line-height: 1;
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: var(--max-lines);
+  }
+  .btn-container button{
+      border: none;
+      font-size: 16px;
+      color:white;
+      padding: 8px 16px;
+      background-color: #5C6AC4;
+      border-radius: 6px;
+      margin: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+  .btn-container button:hover{
+      background-color: #82A3D9;
+  }
+  .btn-container{
+      display: flex;
+      justify-content: center;
+  }
