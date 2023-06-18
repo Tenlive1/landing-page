@@ -429,7 +429,7 @@ header{
   min-height: 280px;
 }
 .layer-2-title{
-  height: 20%;
+  margin-bottom: 10vh;
 }
 .layer-2 *{
   box-sizing: border-box;
@@ -454,8 +454,8 @@ header{
       background-color: #AB7AC4;
       /* max-width: 300px; */
       
-      min-height: 300px;
-      max-height: 300px;
+      min-height: 500px;
+      max-height: 500px;
       
   }
   .img-container{
