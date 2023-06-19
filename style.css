@@ -464,7 +464,7 @@ header{
   }
   .description{
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       flex-direction: column;
       flex: 1;
       padding: 10px 14px;
@@ -519,7 +519,7 @@ header{
   }
 
 
-  @media (min-width:420px) and (min-height:0px) and (max-height:800px){
+  @media (min-width:420px) and (min-height:0px) and (max-height:700px){
     .layer-2-title{
       /* display: none; */
     }
@@ -537,7 +537,7 @@ header{
       /* basically this will tell us how big the card will be at max size */
         /* min-height: 30vh; */
         width: 100%;
-        max-width: 1000px;
+        /* max-width: 1000px; */
     }
     .card{
       /* this i will tell me how big the card is in height */
@@ -578,19 +578,46 @@ header{
     } */
   }
 
-  @media (min-height:801px) {
+  @media (min-height:701px) {
     .layer-2{
-      max-height: 700px;
+      max-height: 800px;
     }
     .card{
-      max-width: 400px;
-      min-height: 550px;
+      max-width: 500px;
+      min-height: 600px;
     }
     .description{
       justify-content: space-between;
     }
   }
-  @media (min-width:2200px) {
+  @media (min-width:1060px) {
+    .layer-2{
+      max-height: 650px;
+    }
+    /* .slide-container{
+      display: flex;
+      justify-content: center;
+    } */
+    .card{
+      flex-direction: column;
+      min-height: 445px;
+      max-height: 500px;
+      max-width: 300px;
+    }
+    .img-container{
+      width: 100%;
+      height: auto;
+    }
+    .img-container img{
+      border-radius: 25px 25px 0 0;
+    }
+    .description{
+      width: 100%;
+      justify-content: space-between;
+    }
+
+  }
+  @media (min-width:1800px) {
     .slide-container{
       display: flex;
       justify-content: center;

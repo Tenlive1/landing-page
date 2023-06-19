@@ -29,3 +29,34 @@ window.onload = function(){
    
 }
 
+var swiper = new Swiper(".slide-content", { 
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop:true,
+      
+      // autoplay: {
+      //     delay: 4500,
+      //     disableOnInteraction: false,
+      // },
+      
+      breakpoints:{
+        1060 :{
+          slidesPerView: "3",
+          loop: false,
+          centeredSlides: false,
+          spaceBetween: 35,
+          
+        },
+        1280 :{
+          slidesPerView: "5",
+          loop: false,
+          centeredSlides: false,
+          spaceBetween: 35,
+          
+        },
+        
+        
+      },
+  });
+
