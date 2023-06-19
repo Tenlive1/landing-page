@@ -26,62 +26,6 @@ window.onload = function(){
     }
     })
 
-    var swiper = new Swiper(".slide-content", { 
-      slidesPerView: "1",
-      spaceBetween: 10,
-        pagination: {
-            el: ".swiper-pagination",
-            dynamicBullets: false,
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        
-        autoplay: {
-            delay: 4500,
-            disableOnInteraction: false,
-        },
-        
-        breakpoints:{
-          0:{
-            slidesPerView: "1",
-            spaceBetween: 20,
-            loop: true,
-            centeredSlides: true,
-            
-          },
-          480: {
-            slidesPerView: "2",
-            loop: true,
-            centeredSlides: true,
-            spaceBetween: 30,
-            
-          },
-          770:{
-            slidesPerView: "3",
-            loop: true,
-            centeredSlides: true,
-            spaceBetween: 35,
-            
-          },
-          1025 :{
-            slidesPerView: "4",
-            loop: true,
-            centeredSlides: true,
-            spaceBetween: 35,
-            
-            
-          },
-          1200:{
-            slidesPerView: "5",
-            centeredSlides: false,
-            loop: false,
-            spaceBetween: 35,
-          },
-        },
-    });
-    
+   
 }
 
