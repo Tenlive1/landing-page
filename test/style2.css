@@ -1,7 +1,11 @@
+*{
+  padding:0;
+  margin: 0;
+}
 .layer-2{
-  /* height: 100vh; */
+  height: 100vh;
   max-height: 1000px;
-  min-height: 600px;
+  min-height: 625px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -10,7 +14,7 @@
 }
 .layer-2-title{
   margin: 1rem;
-  font-size: 4vh;
+  font-size: 1.5em;
 }
 .layer-2 *{
   box-sizing: border-box;
@@ -19,18 +23,21 @@
   /* slider */
   .slide-container{
     /* this i will change the size of the slide container aka the side will be bigger */
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+
   }
   .card-container{
     /* basically this will tell us how big the card will be at max size */
-      /* min-height: 30vh;
-      width: 300px;
-      max-width: 70vw; */
+      min-height: 30vh;
+      width: 100%;
   }
   .card{
     /* this i will tell me how big the card is in height */
       border-radius: 25px;
       background-color: #AB7AC4;
+      max-width: 350px;
+      min-height: 500px;
       
   }
   .img-container{
@@ -49,11 +56,6 @@
       justify-content: center;
       flex-direction: column;
       padding: 10px 14px;
-  }
-  .slide-container{
-      max-width: 1680px;
-      width: 100%;
-      padding: 1vh;
   }
   .slide-content{
       margin: 0 16px;
@@ -100,4 +102,52 @@
   .btn-container{
       display: flex;
       justify-content: center;
+  }
+
+
+  @media (min-width:420px) and (min-height:280px){
+    .layer-2-title{
+      /* display: none; */
+    }
+    .layer-2{
+      height: 100%;
+      min-height: 367px;
+    } 
+    .slide-container{
+      /* this i will change the size of the slide container aka the side will be bigger */
+      margin-bottom: 0rem;
+      width: 100%;
+  
+    } 
+    .card-container{
+      /* basically this will tell us how big the card will be at max size */
+        /* min-height: 30vh; */
+        width: 100%;
+    }
+    .card{
+      /* this i will tell me how big the card is in height */
+        border-radius: 25px;
+        background-color: #AB7AC4;
+        max-width: none;
+        min-height: 280px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+        
+    }
+    .img-container{
+      /* padding: .5rem .5rem 0rem .5rem; */
+      height: 100vh;
+      width: 50%;
+      justify-content: flex-start;
+    }
+    .img-container img{
+      width: auto;
+      height: 100%;
+      border-radius: 25px  0 0 25px;
+      object-fit: cover;
+    }
+    .description{
+      width: 50%;
+    }
   }
