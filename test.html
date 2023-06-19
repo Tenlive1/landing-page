@@ -107,11 +107,46 @@
 </body>
 
 <script>
+  let h = window.innerHeight;
   var swiper = new Swiper(".slide-content", { 
       slidesPerView: "auto",
       spaceBetween: 30,
       centeredSlides: true,
       loop:true,
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: false,
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        
+        autoplay: {
+            delay: 4500,
+            disableOnInteraction: false,
+        },
+        
+        breakpoints:{
+          
+          1060 :{
+            slidesPerView: "3",
+            loop: false,
+            centeredSlides: false,
+            spaceBetween: 35,
+            
+          },
+          1280 :{
+            slidesPerView: "5",
+            loop: false,
+            centeredSlides: false,
+            spaceBetween: 35,
+            
+          },
+          
+          
+        },
     });
 </script>
 </html>
