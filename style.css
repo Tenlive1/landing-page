@@ -111,6 +111,36 @@ header{
 .menu-container{
     padding: 0 3vw;
 }
+.navigation{
+    display: none;
+} 
+@media (min-width:960px) {
+  .menu-container{
+    display: none;
+  }
+  .header-logo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .navigation{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  } 
+  .pc-nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+  } 
+  .pc-nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+  }
+
+
+}
 
 /* layer 1 */
 .background{
@@ -337,7 +367,7 @@ header{
     .layer-1{
       height: 60vh;
       min-height: 600px;
-      min-width: 860px;
+      min-width: 720px;
       @media (min-width:1050px) and (min-height:1000px) {
         min-height: 600px;
         max-height: 700px;
@@ -346,7 +376,7 @@ header{
     .background{
       height: 60vh;
       min-height: 600px;
-      min-width: 860px;
+      min-width: 720px;
       @media (min-width:1050px) and (min-height:1000px) {
         min-height: 600px;
         max-height: 700px;
@@ -565,7 +595,7 @@ header{
     }
     .img-container img{
       width: 100%;
-      max-width: 400px;
+      max-width: 300px;
       height: 100%;
       border-radius: 25px  0 0 25px;
       object-fit: cover;
@@ -574,25 +604,9 @@ header{
       width: 40%;
       justify-content: center;
     }
-    /* @media screen and ( min-width: 550px) {
-      .card{
-        max-width: 250px;
-      }
-    } */
+
   }
 
-  /* @media (min-height:701px) {
-    .layer-2{
-      max-height: 625px;
-    }
-    .card{
-      max-width: 375px;
-      min-height: 550px;
-    }
-    .description{
-      justify-content: space-between;
-    }
-  } */
 
 @media (min-width:700px) {
   .duplication{
