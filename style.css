@@ -5,6 +5,7 @@
 body{
     background-color: blueviolet;
     height: 1000vh;
+    
 }
 
 .header{
@@ -12,6 +13,8 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, .50);
+
+   
     
 }
 .header-logo{
@@ -20,13 +23,22 @@ body{
 header{
     position: fixed;
     top: 0;
+    left: 0;
+    --header-height:50px;
+    height: var(--header-height);
     width: 100%;
     z-index: 99;
+
+    transition: transform .4s;
+}
+header.hidden{
+  transform: translateY(calc(-1 * var(--header-height)));
 }
 .header-logo a{
     text-decoration: none;
     color: #fff;
     font-size: 2em;
+    font-weight: 200;
 }
 .hamburger{
     width: 35px;
@@ -141,6 +153,8 @@ header{
 
 
 }
+
+
 
 /* layer 1 */
 .background{
