@@ -41,18 +41,21 @@ var swiper = new Swiper(".slide-content", {
       // },
       
       breakpoints:{
+        720:{
+            spaceBetween: 35,
+        },
         1060 :{
           slidesPerView: "3",
           loop: false,
           centeredSlides: false,
-          spaceBetween: 35,
+          spaceBetween: 40,
           
         },
         1280 :{
           slidesPerView: "5",
           loop: false,
           centeredSlides: false,
-          spaceBetween: 35,
+          spaceBetween: 45,
           
         },
         
