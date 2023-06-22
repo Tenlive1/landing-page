@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+body{
+  height: 120vh;
+  background-color: rgb(230, 144, 252);
+}
 .layer-3{
   display: flex;
   justify-content: center;
@@ -14,9 +18,17 @@
 }
 .video-bg{
   position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
   z-index: -3;
 }
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  }
