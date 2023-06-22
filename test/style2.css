@@ -1,190 +1,22 @@
 *{
-  padding:0;
   margin: 0;
+  padding: 0;
 }
-.layer-2{
-  height: 100vh;
-  max-height: 1000px;
-  min-height: 625px;
-  min-width: 280px;
+.layer-3{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background-color: #BE94D4;
+  /* background-color: rgb(248, 137, 239); */
+  position: relative;
+  height: 100vh;
+  max-height: 700px;
+  overflow: hidden;
 }
-.layer-2-title{
-  margin: 1rem;
-  font-size: 1.5em;
+.video-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -3;
 }
-.layer-2 *{
-  box-sizing: border-box;
-}
-
-  /* slider */
-  .slide-container{
-    /* this i will change the size of the slide container aka the side will be bigger */
-    margin-bottom: 2rem;
-    width: 100%;
-
-  }
-  .card-container{
-    /* basically this will tell us how big the card will be at max size */
-      min-height: 30vh;
-      width: 100%;
-  }
-  .card{
-    /* this i will tell me how big the card is in height */
-      border-radius: 25px;
-      background-color: #AB7AC4;
-      display: flex;
-      flex-direction: column;
-      min-width: 200px;
-      min-height: 500px;
-      max-width: 500px;
-      
-  }
-  .img-container{
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-      
-  }
-  .img-container img{
-      width: 100%;
-      border-radius: 25px 25px 0 0;
-      object-fit: cover;
-      min-height: 216px;
-      
-  }
-  .description{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      flex: 1;
-      padding: 10px 14px;
-  }
-  .slide-content{
-      margin: 0 16px;
-  }
-  .description p{
-      text-align: center;
-      font-size:1.1em;
-
-
-      
-      --max-lines: 3;
-      --line-height: 2;
-      line-height: var(--line-height);
-      display: -webkit-box;
-      overflow: hidden;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: var(--max-lines);
-  }
-  
-  .description h1{
-      text-align: center;
-      font-weight: 860;
-      font-size: 1.3em;
-
-      --max-lines: 3;
-      --line-height: 1;
-      display: -webkit-box;
-      overflow: hidden;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: var(--max-lines);
-  }
-  .btn-container button{
-      border: none;
-      font-size: 16px;
-      color:white;
-      padding: 8px 16px;
-      background-color: #5C6AC4;
-      border-radius: 6px;
-      margin: 14px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-  }
-  .btn-container button:hover{
-      background-color: #82A3D9;
-  }
-  .btn-container{
-      display: flex;
-      justify-content: center;
-  }
-
-
-  @media (min-width:420px) and (min-height:0px) and (max-height:700px){
-    .layer-2-title{
-      /* display: none; */
-    }
-    .layer-2{
-      height: 100%;
-      min-height: 367px;
-    } 
-    .slide-container{
-      /* this i will change the size of the slide container aka the side will be bigger */
-      margin-bottom: 0rem;
-      width: 100%;
-  
-    } 
-    .card-container{
-      /* basically this will tell us how big the card will be at max size */
-        /* min-height: 30vh; */
-        width: 100%;
-        max-width: 1000px;
-    }
-    .card{
-      /* this i will tell me how big the card is in height */
-        border-radius: 25px;
-        background-color: #AB7AC4;
-        max-width: none;
-        flex-direction: row;
-        min-height: 280px;
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 1rem;
-        max-height: 380px;
-        width: 95%;
-        
-    }
-    .img-container{
-      /* padding: .5rem .5rem 0rem .5rem; */
-      height: 100vh;
-      width: 60%;
-      justify-content: flex-start;
-      max-height: 380px;
-    }
-    .img-container img{
-      width: 100%;
-      max-width: 400px;
-      height: 100%;
-      border-radius: 25px  0 0 25px;
-      object-fit: cover;
-    }
-    .description{
-      width: 40%;
-      justify-content: center;
-    }
-    /* @media screen and ( min-width: 550px) {
-      .card{
-        max-width: 250px;
-      }
-    } */
-  }
-
-  @media (min-height:700px) {
-    .layer-2{
-      max-height: 700px;
-    }
-    .card{
-      max-width: 400px;
-      min-height: 550px;
-    }
-  }
-  @media (min-width:2200px) {
-    .slide-container{
-      display: flex;
-      justify-content: center;
-    }
-  }
