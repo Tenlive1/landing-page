@@ -1,62 +1,28 @@
-body, html {
-  padding: 0;
-  margin:0;
-  height: 100%;
+*{
+  margin: 0;
+  padding:0;
+  border: 0;
 }
-
-.section {
-  width: 100%;
-  height: 100%;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  position: relative;
+body{
+  height: 100vh;
+}
+.layer{
+  min-height: 500px;
   background-color: white;
-  z-index: 2;
 }
 
-.section.one,
-.section.three {
-  background-image: url(http://www.maximumpc.com/files/u160391/chrome_0.png);
+h2{
+  font-size: 50px;
 }
 
-.section.two {
-  background: none;
-}    
-
-.sleep-video {
-    left: 0;
-    top: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
-.layer-3{
-  height: 100vh;
+.Paravedio{
+  height: 300px;
+  padding: 50px 0px;
 }
 
-/* .layer-3{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(248, 137, 239);
-  position: relative;
-  height: 100vh;
-  max-height: 700px;
-  overflow: hidden;
-}
-.video-bg{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  
-  z-index: -3;
-}
-video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
+.Paravedio video{
+  min-height: 100%;
   position: fixed;
   top: 0;
-  left: 0;
-  } */
+  z-index: -99;
+}
