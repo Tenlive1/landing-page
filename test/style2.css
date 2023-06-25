@@ -49,9 +49,22 @@ h2{
 
 }
 
+@media (orientation: landscape) {
+  .layer-3{
+    background-position: unset;
+    height: 100vh;
+  }
+}
+@media (orientation: portrait) {
+  .layer-3{
+    background-position: center;
+    height: 100vh;
+  }
+}
+
 /* mobile */
 
-@media (min-width: 280px) {
+/* @media (min-width: 280px) {
   .layer-3{
     background-position: center;
     height: 100vh;
@@ -100,4 +113,5 @@ h2{
   .text.container h2{
     font-size: 1.5rem;
   }
-}
+} */
+
