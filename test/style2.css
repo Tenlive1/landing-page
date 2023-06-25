@@ -12,7 +12,6 @@ body{
 }
 .layer-3{
   width: 100%;
-  height: 80vh;
   /* background-position: center;   might to use this in mobile */
   background-size: cover;
   background-image: url("/img/1315953.jpg");
@@ -21,6 +20,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 300px;
+  
 }
 
 .three.container{
@@ -42,29 +43,21 @@ body{
 
   
 }
-#text{
-  padding-left: 1rem;
-}
+
 h2{
 
   display: flex;
   justify-content: center;
   font-size: 2rem;
   font-family: 'Lobster Two', cursive;
-  padding-left: 1rem;
 
 }
 
-@media (orientation: landscape) {
-  .layer-3{
-    background-position: unset;
-    height: 100vh;
-  }
-}
+
 @media (orientation: portrait) {
   .layer-3{
     background-position: center;
-    height: 100vh;
+    height: 60vh;
   }
 }
 
@@ -77,18 +70,39 @@ h2{
   }
   .text.container{
     font-size: 2rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+
   }
   .text.container h2{
     font-size: 1.4rem;
+    padding-top: 1rem;
+  }
+  @media (orientation: landscape) {
+    .layer-3{
+      background-position: unset;
+      height: 100vh;
+    }
   }
 }
 /* mobile large */
 @media (min-width: 400px) {
+  .layer-3{
+    height: 60vh;
+  }
   .text.container{
     font-size: 2rem;
+    padding: 0 .8em 0 .8em;
   }
   .text.container h2{
     font-size: 1.4rem;
+    padding-top: 1em;
+  }
+  @media (orientation: landscape) {
+    .layer-3{
+      background-position: unset;
+      height: 100vh;
+    }
   }
 }
 @media (min-width: 600px) {
@@ -99,15 +113,45 @@ h2{
   .text.container h2{
     font-size: 1.5rem;
   }
+  @media (orientation: landscape) {
+    .layer-3{
+      background-position: unset;
+      height: 100vh;
+    }
+  }
 }
 
 @media (min-width: 720px) {
-  
+  .layer-3{
+    max-height: 500px;
+  }
   .text.container{
     font-size: 3rem;
   }
   .text.container h2{
     font-size: 1.5rem;
   }
+  @media (orientation: landscape) {
+    .layer-3{
+      background-position: unset;
+      max-height: 500px;
+    }
+  }
 }
-
+@media (min-width:1280px) {
+  .layer-3{
+    max-height: 600px;
+  }
+  
+}
+/* height */
+@media (max-height:400px) and (orientation: landscape){
+  .layer-3{
+    height: 100vh;
+  }
+}
+@media (min-height:500px) and (orientation: landscape) and (max-width:1280px){
+  .layer-3{
+    max-height: 500px;
+  }
+}
