@@ -37,7 +37,7 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
-
+  font-family: 'Lobster Two', cursive;
   font-size: 64px;
 }
 h2{
@@ -45,6 +45,8 @@ h2{
   display: flex;
   justify-content: center;
   font-size: 32px;
+  font-family: 'Lobster Two', cursive;
+
 }
 /* h2{
   font-size: 50px;
