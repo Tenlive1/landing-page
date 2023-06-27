@@ -685,7 +685,8 @@ header.hidden{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 300px;
+  min-height: 400px;
+  min-width: 280px;
   
 }
 
@@ -727,7 +728,15 @@ header.hidden{
 }
 
 /* mobile */
-
+@media (max-width:279px) {
+  .layer-3{
+    background-position: center;
+    height: 100vh;
+  }
+  .text.container{
+    font-size: 3rem;
+  }
+}
 @media (min-width: 280px) {
   .layer-3{
     background-position: center;
@@ -820,7 +829,15 @@ header.hidden{
     max-height: 500px;
   }
 }
-    
+  
+@media (min-width:1281px) {
+  .text.container{
+    font-size: 5rem;
+  }
+  .text.container h2{
+    font-size: 2.5rem;
+  }
+}
     
     
 
