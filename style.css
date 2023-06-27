@@ -709,7 +709,7 @@ header.hidden{
   
 }
 
-h2{
+.text.container h2{
 
   display: flex;
   justify-content: center;
