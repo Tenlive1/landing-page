@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+
+
+}
+body{
+    height:200vh
+}
+.layer-4{
+    height: 100vh;
+    background-color: #BE94D4;
+    max-height: 700px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-4{
+    height: 95%;
+    width: 90%;
+    background-color:#8d23eb
+}
+
+.container-4 .text.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
