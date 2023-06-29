@@ -30,10 +30,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
-
+.layer-4 .text-container{
+    margin-bottom: 24px;
+}
 .layer-4 .text-container h1{
     text-align: center;
+    font-size: 26px;
+    
 }
 
 .form-container{
@@ -62,3 +67,22 @@ select{
     outline: none;
 }
 
+.policy-container{
+    margin-top: 16px;
+    text-align: center;
+}
+.sub-btn{
+    min-width: 150px;
+    font-size: 20px;
+    padding: 8px 16px;
+    margin-top: 16px;
+    font-weight: 700;
+}
+.sub-btn:hover{
+    transition: .6s;
+    background-color: #5C6AC4;
+}
+.sub-btn:active{
+    transition: 0s;
+    background-color: #FFB6C1;
+}
