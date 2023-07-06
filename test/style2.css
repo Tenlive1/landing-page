@@ -11,6 +11,7 @@ body{
     height: 100vh;
     background-color: #BE94D4;
     max-height: 700px;
+    min-height: 350px;
 
     display: flex;
     justify-content: center;
@@ -77,6 +78,9 @@ select{
     padding: 8px 16px;
     margin-top: 16px;
     font-weight: 700;
+
+    border:none;
+    border-radius: 24px;
 }
 .sub-btn:hover{
     transition: .6s;
