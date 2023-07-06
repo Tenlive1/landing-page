@@ -4,7 +4,6 @@
 }
 body{
     background-color: blueviolet;
-    height: 1000vh;
     
 }
 
@@ -259,6 +258,7 @@ header.hidden{
   
     font-size: 1.3rem;
     min-width: 200px;
+    cursor: pointer;
     
   }
   
