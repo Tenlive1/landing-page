@@ -58,3 +58,8 @@ color
 #BE94D4 -- lilac
 
 #8d23eb -- my purple
+
+
+todo list
+
+need to change the color for the hamburger on mobile
