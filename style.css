@@ -259,6 +259,18 @@ header.hidden{
     cursor: pointer;
     
   }
+  .Source{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+  }
+  .source-container{
+    padding: 3px;
+    color: white;
+    border-radius:10px;
+    background-color: rgba(0, 0, 0, .50);
+  }
   
 /* media query for layer 1 */
   
