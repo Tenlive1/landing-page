@@ -7,8 +7,14 @@ window.onload = function(){
     menue_btn.addEventListener('click',()=>{
         menue_btn.classList.toggle('is-active');
         mobile_menu.classList.toggle('is-active');
-    })
+    });
 
+    const home_btn = document.querySelector('.home-btn');
+    home_btn.addEventListener('click',()=>{
+      console.log("click");
+      menue_btn.classList.toggle('is-active');
+      mobile_menu.classList.toggle('is-active');
+  });
     listen_btn.addEventListener('click',()=>{
         let val = Math.floor(Math.random() * 2);
         if(val == 0){
