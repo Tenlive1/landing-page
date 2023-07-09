@@ -212,6 +212,7 @@ header.hidden{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 50%;
    
     padding-top: 2rem;
@@ -259,18 +260,7 @@ header.hidden{
     cursor: pointer;
     
   }
-  .Source{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 10vh;
-  }
-  .source-container{
-    padding: 3px;
-    color: white;
-    border-radius:10px;
-    background-color: rgba(0, 0, 0, .50);
-  }
+  
   
 /* media query for layer 1 */
   
@@ -988,6 +978,27 @@ a.foot-link{
 }
 
     
-    
+  /* sources */
+
+
+  .Source{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    text-align: center;
+  }
+  .source-container{
+    padding: 3px;
+    color: white;
+    border-radius:10px;
+    background-color: rgba(0, 0, 0, .50);
+  }
+  .Source.two{
+    margin-top: 0;
+  }
+  .source-container a{
+    color: white;
+  }
 
     
