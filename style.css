@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    background-color: #AB7AC4;
+    background-color: #BE94D4;
     
 }
 
@@ -182,7 +182,7 @@ header.hidden{
   .container-1{
     background-color: rgba(18, 14, 241, 0.4);
     width: 85%;
-    margin: 0 auto 0 auto;
+    margin: 42px auto 0 auto;
     border-radius: 50px;
     border: 2px solid white;
   
