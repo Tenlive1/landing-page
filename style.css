@@ -88,7 +88,8 @@ header.hidden{
     z-index: 98;
     background-color: rgba(0, 0, 0, .50);   
     align-items: center;
-    padding-top: 120px;
+    /* padding-top: 120px; */
+    justify-content: center;
     
     transition: .4s;
     
@@ -123,6 +124,14 @@ header.hidden{
 .navigation{
     display: none;
 } 
+@media (orientation: landscape) and (max-height:281px) {
+  .mobile-nav a{
+    margin: 3vh;
+  }
+  .mobile-nav.is-active{
+    justify-content: start;
+  }
+}
 @media (min-width:960px) {
   .menu-container{
     display: none;
