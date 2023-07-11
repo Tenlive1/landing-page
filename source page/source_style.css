@@ -2,11 +2,22 @@
     padding: 0;
     margin: 0;
 }
+body{
+}
+.source-container{
+    min-height: 400px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, .50);
+    background-color: rgba(216, 208, 208, 0.3);
 
    
     
@@ -81,7 +92,7 @@ header.hidden{
     width: 100%;
     min-height: 100vh;
     z-index: 98;
-    background-color: rgba(0, 0, 0, .50);   
+    background-color: rgba(216, 208, 208, 0.2);
     align-items: center;
     padding-top: 120px;
     
@@ -144,4 +155,49 @@ header.hidden{
   }
 
 
+}
+
+.container{
+    color: red;
+    text-align: center;
+}
+.container h1{
+    /* font-size: 98px */
+}
+.container h2{
+    /* font-size: 64px */
+}
+.heart{
+    text-align: center;
+    color:white;
+    font-size: 17px;
+}
+.message{
+    font-size: 24px;
+    /* font-size: 32px; */
+    text-align: center;
+    color:white
+}
+
+@media (min-width:450px) {
+    .container{
+        color: red;
+        text-align: center;
+    }
+    .container h1{
+        font-size: 48px
+    }
+    .container h2{
+        font-size: 32px
+    }
+    .heart{
+        text-align: center;
+        color:white;
+        font-size: 32px;
+    }
+    .message{
+        font-size: 32px;
+        text-align: center;
+        color:white
+    }
 }
